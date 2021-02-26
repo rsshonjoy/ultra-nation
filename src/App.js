@@ -17,6 +17,11 @@ function App() {
   return (
     <div className="App">
       <h1>country loaded: {countries.length}</h1>
+      <ul>
+        {countries.map((country) => (
+          <li>{country.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }
