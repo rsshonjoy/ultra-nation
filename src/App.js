@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <h1>Country Loaded: {countries.length}</h1>
       {countries.map((country) => (
-        <Country name={country.name} />
+        <Country countryName={country.name} />
       ))}
     </div>
   );
