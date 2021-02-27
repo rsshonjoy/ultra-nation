@@ -15,8 +15,8 @@ function App() {
       })
       .catch((error) => console.log(error));
   }, []);
-  const handleAddCountry = () => {
-    console.log('added');
+  const handleAddCountry = (country) => {
+    console.log('added', country);
   };
 
   return (

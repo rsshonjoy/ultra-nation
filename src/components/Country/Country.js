@@ -15,7 +15,7 @@ const Country = (props) => {
       <p>
         <small>Region: {region}</small>
       </p>
-      <button type="button" onClick={() => handleAddCountry(props.Country)}>
+      <button type="button" onClick={() => handleAddCountry(props.country)}>
         Add Country
       </button>
     </div>
