@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Country from './components/Country/Country';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <h1>Country Loaded: {countries.length}</h1>
       <h3>Country Added: {cart.length}</h3>
+      <Cart cart={cart} />
       {countries.map((country) => (
         <Country country={country} handleAddCountry={handleAddCountry} key={country.alpha3Code} />
       ))}
